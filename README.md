@@ -24,6 +24,11 @@ Repo是个接口,需要继承 JpaRepository<E, Long> , JpaSpecificationExecutor<
 因为后续Service层会用到对应的方法
 假设我们的Repo接口叫DemoRepo
 ```
+```java
+public interface DemoRepo extends JpaRepository<E, Long> , JpaSpecificationExecutor<E> {
+
+}
+```
 
 ### Service 配置
 
